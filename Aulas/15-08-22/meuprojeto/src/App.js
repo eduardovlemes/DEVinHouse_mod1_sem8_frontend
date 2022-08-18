@@ -1,5 +1,6 @@
 import "./App.css";
 import Titulo from "./components/Titulo";
+import Texto from "./components/Texto";
 import Soma from "./components/Soma";
 import CapsLock3 from "./components/CapsLock3";
 import Post from "./components/Post";
@@ -8,6 +9,7 @@ function App() {
   return (
     <div>
       {/*       <Titulo />
+      <Texto/>
       <Soma numero1={10} numero2={20} />
       <CapsLock3> Eu sou um filho</CapsLock3> */}
 
@@ -23,5 +25,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

@@ -15,6 +15,7 @@ function Post({
           <h3>{nomeDoUsuario}</h3>
           <h3>{tempoDoPost}</h3>
         </div>
+
         <p>{descricaoPost}</p>
 
         <img src={imagemPublicada} />
