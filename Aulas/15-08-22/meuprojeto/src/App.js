@@ -8,6 +8,7 @@ import CapsLock3 from "./components/CapsLock3";
 import Post from "./components/Post";
 
 function App() {
+  const docesEmCasa = ["alpino", "sensação", "shot"];
   return (
     <div>
       {/*       <Titulo />
@@ -17,7 +18,7 @@ function App() {
       <button textoEnviado="Botão" corFundo="blue"></button>
       <CapsLock3> Eu sou um filho</CapsLock3> */}
 
-      <Post
+      {/* <Post
         fotoDoPerfil="https://cdn.pensador.com/img/authors/ho/me/homer-simpson-l.jpg"
         tempoDoPost="10"
         nomeDoUsuario="Otávio"
@@ -25,7 +26,9 @@ function App() {
         imagemPublicada="https://www.ahempreendimentos.com.br/images/jardim-curitiba-02.jpg"
         shareUrl="www.google.com"
         curtidoPor="25"
-      />
+      /> */}
+
+      <Doces listaDeDoces={docesEmCasa} />
     </div>
   );
 }
