@@ -1,4 +1,3 @@
-export default function BotaoProps(props) {
-  const { textoEnviado, corFundo } = props;
+export default function BotaoProps({ textoEnviado, corFundo }) {
   return <button style={{ backgroundColor: corFundo }}>{textoEnviado}</button>;
 }
