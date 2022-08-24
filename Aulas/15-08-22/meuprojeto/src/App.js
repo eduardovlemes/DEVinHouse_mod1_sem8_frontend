@@ -8,6 +8,7 @@ import CapsLock3 from "./components/CapsLock3";
 import Post from "./components/Post";
 import Doces from "./components/Doces";
 import Contatos from "./components/Contatos";
+import Produtos from "./components/Produtos";
 
 function App() {
   /* const docesEmCasa = ["alpino", "sensação", "shot"]; */
@@ -38,7 +39,7 @@ function App() {
     },
   ]; */
 
-  const contato = [
+  /* const contato = [
     {
       id: 1,
       photo: "https://cdn.pensador.com/img/authors/ho/me/homer-simpson-l.jpg",
@@ -51,6 +52,23 @@ function App() {
         "https://lumiere-a.akamaihd.net/v1/images/lisa_simpson_fox_df826d5d.jpeg?region=0,0,674,864",
       name: "Lisa",
       description: "kkkkkkkkkkkkkkkkkkkkkkkk",
+    },
+  ]; */
+
+  const produto = [
+    {
+      id: 1,
+      photo:
+        "https://santaluciadrogaria.vtexassets.com/arquivos/ids/162198/7896714223841.png?v=637638102766700000",
+      name: "Nimesulida",
+      price: "R$ 5",
+    },
+    {
+      id: 2,
+      photo:
+        "https://cdn1.evitamins.com/images/products/Natures_Bounty/318778/1400/318778_front2022.webp",
+      name: "Gincobiloba",
+      price: "R$ 4",
     },
   ];
   return (
@@ -77,13 +95,24 @@ function App() {
         );
       })} */}
 
-      {contato.map((contat) => {
+      {/* {contato.map((contat) => {
         return (
           <Contatos
             key={contat.id}
             photo={contat.photo}
             name={contat.name}
             description={contat.description}
+          />
+        );
+      })} */}
+
+      {produto.map((produt) => {
+        return (
+          <Produtos
+            key={produt.id}
+            photo={produt.photo}
+            name={produt.name}
+            price={produt.price}
           />
         );
       })}
