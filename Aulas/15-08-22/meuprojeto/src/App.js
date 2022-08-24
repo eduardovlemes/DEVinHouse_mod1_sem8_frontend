@@ -7,20 +7,21 @@ import BotaoProps from "./components/BotaoProps";
 import CapsLock3 from "./components/CapsLock3";
 import Post from "./components/Post";
 import Doces from "./components/Doces";
+import Contatos from "./components/Contatos";
 
 function App() {
   /* const docesEmCasa = ["alpino", "sensação", "shot"]; */
-  const posts = [
+  /* const posts = [
     {
       id: 1,
-      otoDoPerfil:
+      fotoDoPerfil:
         "https://cdn.pensador.com/img/authors/ho/me/homer-simpson-l.jpg",
       tempoDoPost: "hoje",
       nomeDoUsuario: "Otávio",
-      descricaoPost: "lorem ips...",
+      descricaoPost: "jjjjjjjjjjjjjjjjjjjjjjjjjj",
       imagemPublicada:
         "https://www.ahempreendimentos.com.br/images/jardim-curitiba-02.jpg",
-      shareUrl: "www.google.com",
+      shareUrl: "www.youtube.com",
       curtidoPor: 25,
     },
     {
@@ -35,6 +36,22 @@ function App() {
       shareUrl: "www.google.com",
       curtidoPor: 0,
     },
+  ]; */
+
+  const contato = [
+    {
+      id: 1,
+      photo: "https://cdn.pensador.com/img/authors/ho/me/homer-simpson-l.jpg",
+      name: "Homer",
+      description: "jjjjjjjjjjjjjjjjjjjjjjjjjj",
+    },
+    {
+      id: 2,
+      photo:
+        "https://lumiere-a.akamaihd.net/v1/images/lisa_simpson_fox_df826d5d.jpeg?region=0,0,674,864",
+      name: "Lisa",
+      description: "kkkkkkkkkkkkkkkkkkkkkkkk",
+    },
   ];
   return (
     <div>
@@ -44,7 +61,8 @@ function App() {
       <CapsLock2 textoEnviado = "Sou uma props"/> 
       <button textoEnviado="Botão Azul" corFundo="blue"></button>
       <CapsLock3> Eu sou um filho</CapsLock3> */}
-      {posts.map((post) => {
+
+      {/* {posts.map((post) => {
         return (
           <Post
             key={post.id}
@@ -57,8 +75,18 @@ function App() {
             curtidoPor={post.curtidoPor}
           />
         );
-      })}
+      })} */}
 
+      {contato.map((contat) => {
+        return (
+          <Contatos
+            key={contat.id}
+            photo={contat.photo}
+            name={contat.name}
+            description={contat.description}
+          />
+        );
+      })}
       {/* <Doces listaDeDoces={docesEmCasa} /> */}
     </div>
   );
