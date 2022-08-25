@@ -9,6 +9,7 @@ import Post from "./components/Post";
 import Doces from "./components/Doces";
 import Contatos from "./components/Contatos";
 import Produtos from "./components/Produtos";
+import Tabela from "./components/Tabela";
 
 function App() {
   /* const docesEmCasa = ["alpino", "sensação", "shot"]; */
@@ -54,7 +55,7 @@ function App() {
       description: "kkkkkkkkkkkkkkkkkkkkkkkk",
     },
   ]; */
-
+  /* 
   const produto = [
     {
       id: 1,
@@ -69,6 +70,24 @@ function App() {
         "https://cdn1.evitamins.com/images/products/Natures_Bounty/318778/1400/318778_front2022.webp",
       name: "Gincobiloba",
       price: "R$ 4",
+    },
+  ]; */
+
+  const tabelaDados = [
+    {
+      id: 1,
+      title: "Professor",
+      description: "Ensina cursos.",
+    },
+    {
+      id: 2,
+      title: "Desenvolvedor",
+      description: "Faz códigos de programação.",
+    },
+    {
+      id: 3,
+      title: "Farmacêutico ",
+      description: "Desenvolve medicamentos.",
     },
   ];
   return (
@@ -106,7 +125,7 @@ function App() {
         );
       })} */}
 
-      {produto.map((produt) => {
+      {/*    {produto.map((produt) => {
         return (
           <Produtos
             key={produt.id}
@@ -115,8 +134,10 @@ function App() {
             price={produt.price}
           />
         );
-      })}
+      })} */}
       {/* <Doces listaDeDoces={docesEmCasa} /> */}
+
+      <Tabela data={tabelaDados} />
     </div>
   );
 }
