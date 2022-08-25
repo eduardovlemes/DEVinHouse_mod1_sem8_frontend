@@ -10,6 +10,7 @@ import Doces from "./components/Doces";
 import Contatos from "./components/Contatos";
 import Produtos from "./components/Produtos";
 import Tabela from "./components/Tabela";
+import Pokemon from "./components/Pokemon";
 
 function App() {
   /* const docesEmCasa = ["alpino", "sensação", "shot"]; */
@@ -73,7 +74,7 @@ function App() {
     },
   ]; */
 
-  const tabelaDados = [
+  /* const tabelaDados = [
     {
       id: 1,
       title: "Professor",
@@ -88,6 +89,27 @@ function App() {
       id: 3,
       title: "Farmacêutico ",
       description: "Desenvolve medicamentos.",
+    },
+  ]; */
+
+  const pokemonGO = [
+    {
+      id: 1,
+      nome: "Onix",
+      foto: "https://assets.pokemon.com/assets/cms2/img/pokedex/full//095.png",
+      tipo: "Rocha",
+    },
+    {
+      id: 2,
+      nome: "Amaura",
+      foto: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/698.png",
+      tipo: "Gelo",
+    },
+    {
+      id: 3,
+      nome: "Sylveon",
+      foto: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/700.png",
+      tipo: "Fairy",
     },
   ];
   return (
@@ -137,7 +159,18 @@ function App() {
       })} */}
       {/* <Doces listaDeDoces={docesEmCasa} /> */}
 
-      <Tabela data={tabelaDados} />
+      {/* <Tabela data={tabelaDados} /> */}
+
+      {pokemonGO.map((pokemon) => {
+        return (
+          <Pokemon
+            key={pokemon.id}
+            foto={pokemon.foto}
+            nome={pokemon.nome}
+            tipo={pokemon.tipo}
+          />
+        );
+      })}
     </div>
   );
 }
